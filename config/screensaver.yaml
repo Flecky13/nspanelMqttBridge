@@ -153,13 +153,3 @@ cards:
         item: W_IconID_24
         textItem: W_Rain_24
         timeItem: W_Messung_24
-      - class: ohItem               #Kitchen room temperature from openHAB
-        type: text
-        item: TemperaturKuecheValue6
-        icon: thermometer
-        iconColor: lightblue
-        text: Küche
-      - class: panelTemperature     #Temperature from this panel's built-in Tasmota Analog1 sensor
-        icon: thermometer
-        iconColor: orange
-        text: Panel
