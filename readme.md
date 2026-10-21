@@ -22,6 +22,8 @@ Note: As an alternative HMI you can also use also the HMI from this [fork ioBrok
 ## Documentation
 For more details, installation and configuration of the bridge have a look in the [wiki pages](https://github.com/olialb/nspanelMqttBridge/wiki)
 
+For an icon-only openHAB item slot, set `showText: false` and `showState: false` in the slot definition. The icon and its state-based `iconColor` remain active. To show a readable state instead of the default value, set `stateText`, for example `OFF=Leer,ON=Voll`; `showState` must remain `true`. Both visibility options default to `true`, so existing card configurations keep their current appearance.
+
 ## Screenshots
 
 ![image](doc/ExampleScreensaverMini.jpg)
