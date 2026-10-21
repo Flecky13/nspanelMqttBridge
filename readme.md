@@ -24,6 +24,8 @@ For more details, installation and configuration of the bridge have a look in th
 
 For an icon-only openHAB item slot, set `showText: false` and `showState: false` in the slot definition. The icon and its state-based `iconColor` remain active. To show a readable state instead of the default value, set `stateText`, for example `OFF=Leer,ON=Voll`; `showState` must remain `true`. Both visibility options default to `true`, so existing card configurations keep their current appearance.
 
+Screensaver slots can also show an openHAB text item and the NSPanel's built-in room temperature sensor. Use an `ohItem` slot with `type: text` for the openHAB value, and a `panelTemperature` slot for the panel sensor. The bridge reads `ANALOG.Temperature1` from the panel's Tasmota `tele/<topic>/SENSOR` messages; Tasmota's `TelePeriod` setting controls how often a new temperature is reported.
+
 ## Screenshots
 
 ![image](doc/ExampleScreensaverMini.jpg)
